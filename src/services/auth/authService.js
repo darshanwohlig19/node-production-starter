@@ -1,7 +1,6 @@
 const User = require('../../models/user');
 const { signAccessToken, signRefreshToken, verifyRefreshToken } = require('../../utils/jwt');
 const { getRedis } = require('../../config/redis');
-const config = require('../../config');
 
 const REFRESH_TOKEN_PREFIX = 'refresh_token:';
 
